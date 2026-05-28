@@ -11,9 +11,15 @@ This repository contains the local prototyping engine built for the **Anote AI R
 The pipeline orchestrates a local LLM execution engine via **Ollama** (`llama3`) to execute stateless data classification across four distinct prompt strategies ($C_0, C_{lex}, C_{syn}, C_{ind}$). If the model's self-reflective `confidence_score` falls below a calibrated logic threshold, the architecture automatically triggers a simulated human intervention loop to protect data integrity.
 
 ## 📦 Quick Start
+Running the Pipeline:
+Simply execute the core script to observe the raw JSON output streams and framework execution scoring logs: python benchmark.py
 
 ### Prerequisites
 Ensure you have the Ollama desktop application running locally:
 ```bash
 pip install ollama
 ollama pull llama3
+
+
+
+
